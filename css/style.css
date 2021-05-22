@@ -207,6 +207,32 @@ body {
   background-color: #eeeeee;
 }
 
+.changingText span:before{
+  content: '';
+  animation: animate infinite 7s;
+}
+
+@keyframes animate{
+  0%{
+      content: 'minute';
+  }
+  20%{
+      content: 'hour';
+  }
+  40%{
+      content: 'day';
+  }
+  60%{
+      content: 'week';
+  }
+  80%{
+      content: 'month';
+  }
+  100%{
+      content: 'year';
+  }
+}
+
 .digital-clock {
   font-size: 0;
 }
@@ -324,5 +350,17 @@ body {
   background-color: #242424 !important;
   transition: background-color 1s ease;
 }
+*/
 
+.changingText { 
+    padding: 0;
+    margin: 0;
+    background-color:black;
+}
+
+.changingText h2 {
+  text-align: center;
+  font-size: 5rem;
+  color: white;
+}
 
