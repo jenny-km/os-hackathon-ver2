@@ -409,3 +409,6 @@ body {
   color: white;
 }
 
+.transition{
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(50, 50, 50, 1), rgba(100, 100, 100, 1), rgba(200, 200, 200, 1), rgba(238, 238, 238, 1));
+}
