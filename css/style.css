@@ -16,7 +16,7 @@ section {
   height: 100vh;
   font-size: 40px;
   font-weight: 100;
-  background-color: #eee;
+  background-color: #eeeeee;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,7 +38,6 @@ section:nth-child(2) {
 
 section:nth-child(3) {
   background: #eeeeee;
-  
 }
 
 section:nth-child(4) {
