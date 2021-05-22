@@ -238,16 +238,6 @@ body {
   padding: 0;
 }
 
-.clock-container {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #eeeeee;
-}
-
 .changingText span:before{
   content: '';
   animation: animate infinite 7s;
@@ -341,7 +331,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #eeeeee;
+  background-color: rgba(0,0,0,0);
+  background-image: url("img/john-cameron-IEeqknvHRKQ-unsplash-bw.jpg");
 }
 
 .digital-clock {
@@ -412,8 +403,13 @@ body {
 #image1 {
   display: absolute;
   overflow: scroll;
-  height:auto;
-  max-width: 60%;
+  
+  width: 750px;
   margin-top: 10vh;
   margin-left: 60vh;
+}
+
+#section-intro-1 {
+  background-image: url("./img/john-cameron-IEeqknvHRKQ-unsplash-bw.jpg");
+  
 }
