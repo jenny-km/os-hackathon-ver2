@@ -123,6 +123,8 @@ function checkScrollPosition(clicked_id){
         setListItemActive("list-section6");
     }else if(scrollPosition>= section7 ){
         setListItemActive("list-section7");
+    }else if(scrollPosition>= section8 ){
+        setListItemActive("list-section8");
     }
 
 }
