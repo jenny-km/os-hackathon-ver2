@@ -6,7 +6,7 @@
 
 .wrapper {
   min-height: 100vh;
-  font-family: "Roboto Slab", serif;
+  font-family: "Open Sans", serif;
   font-weight: 300;
   color: rgb(6, 6, 6);
   position: relative;
@@ -42,19 +42,31 @@ section:nth-child(3) {
 }
 
 section:nth-child(4) {
-  background: #eeeeee;
+  background: #eee;
+  padding-left: 28%;
+  padding-right: 5%;
+  text-align: right;
 }
 
 section:nth-child(5) {
-  background: #eeeeee;
+  background: #eee;
+  padding-left: 28%;
+  padding-right: 5%;
+  text-align: right;
 }
 
 section:nth-child(6) {
-  background: #eeeeee;
+  background: #eee;
+  padding-left: 28%;
+  padding-right: 5%;
+  text-align: right;
 }
 
 section:nth-child(7) {
-  background: #eeeeee;
+  background: #eee;
+  padding-left: 28%;
+  padding-right: 5%;
+  text-align: right;
 }
 
 section:nth-child(8) {
