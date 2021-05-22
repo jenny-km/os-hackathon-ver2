@@ -94,6 +94,7 @@ function defineActive(){
 function checkScrollPosition(clicked_id){
     
     var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+    var navbar = document.getElementById("navbar-example");
     var section1 = document.getElementById("section1").offsetTop-100;
     var section2 = document.getElementById("section2").offsetTop-100;
     var section3 = document.getElementById("section3").offsetTop-100;
@@ -108,9 +109,13 @@ function checkScrollPosition(clicked_id){
         console.log("help0");
         var none = "none";
         setListItemActive(none);
+        // hide nav initially
+        navbar.style.opacity = "0";
     }else if(scrollPosition>= section1 && scrollPosition< section2){
         console.log("help1");
         setListItemActive("list-section1");
+        // fade nav in
+        navbar.style.opacity = "1";
     }else if(scrollPosition>= section2 && scrollPosition< section3){
         console.log("help2");
         setListItemActive("list-section2");
@@ -133,6 +138,7 @@ function checkScrollPosition(clicked_id){
         setListItemActive("list-section9");
     }else if(scrollPosition>= section10){
         setListItemActive("list-section10");
+        // fade nav out
     }
 
 }
