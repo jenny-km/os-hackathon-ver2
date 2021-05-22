@@ -11,7 +11,6 @@ window.addEventListener('scroll', arrowDown);
 window.addEventListener('scroll', checkScrollPosition);
 // When the user scrolls the page, execute myFunction
 
-
 // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function arrowDown() {
   if (window.pageYOffset > sticky) {
@@ -90,11 +89,25 @@ function defineActive(){
     return active;
 }
 
-
+var navbar = document.getElementById("navbar-example");
+//navbar.style.opacity = "0";
+var section1 = document.getElementById("section1").offsetTop-100;
+var section10 = document.getElementById("section10").offsetTop;
+$(document).ready(function(){
+    $(window).scroll(function(){
+        // fade in
+        if($(this).scrollTop() < section1 || $(this).scrollTop() > section10 ){
+            $(".nav__wrapper").css({"opacity" : "0"})
+        // fade out
+        } else {
+            $(".nav__wrapper").css({"opacity" : "1"})
+        }
+    })
+})
 function checkScrollPosition(clicked_id){
     
     var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-    var navbar = document.getElementById("navbar-example");
+    var section0 = document.getElementById("section-intro-2").offsetTop+600;
     var section1 = document.getElementById("section1").offsetTop-100;
     var section2 = document.getElementById("section2").offsetTop-100;
     var section3 = document.getElementById("section3").offsetTop-100;
@@ -105,17 +118,23 @@ function checkScrollPosition(clicked_id){
     var section8 = document.getElementById("section8").offsetTop-100;
     var section9 = document.getElementById("section9").offsetTop-100;
     var section10 = document.getElementById("section10").offsetTop-100;
-    if(scrollPosition<section1 ){
-        console.log("help0");
+    var changingText  = document.getElementById("cText").offsetTop-200;
+    var nav = document.getElementById("navbar");
+    if( scrollPosition < section0 ){
+        nav.classList.forEach(item=>{
+            if( item.endsWith('hide') ){
+                nav.classList.remove(item);
+            }
+        });
+        nav.classList.add("hide");
+    } else if( scrollPosition >= section0 && scrollPosition<section1 ){
+        //console.log("help0");
         var none = "none";
         setListItemActive(none);
-        // hide nav initially
-        navbar.style.opacity = "0";
     }else if(scrollPosition>= section1 && scrollPosition< section2){
         console.log("help1");
         setListItemActive("list-section1");
-        // fade nav in
-        navbar.style.opacity = "1";
+        nav.classList.remove("hide");
     }else if(scrollPosition>= section2 && scrollPosition< section3){
         console.log("help2");
         setListItemActive("list-section2");
@@ -136,9 +155,11 @@ function checkScrollPosition(clicked_id){
         setListItemActive("list-section8");
     }else if(scrollPosition>= section9 && scrollPosition < section10){
         setListItemActive("list-section9");
-    }else if(scrollPosition>= section10){
+    }else if(scrollPosition >= section10 && scrollPosition < changingText){
         setListItemActive("list-section10");
-        // fade nav out
+        nav.classList.remove("hide");
+    } else if( scrollPosition >= changingText ){
+        nav.classList.add("hide");
     }
 
 }
