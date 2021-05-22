@@ -14,7 +14,7 @@
 
 section {
   height: 100vh;
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 100;
   background-color: #22a7f0;
   display: -webkit-box;
@@ -70,15 +70,24 @@ section:nth-child(7) {
 }
 
 section:nth-child(8) {
-  background: #eeeeee;
+  background: #eee;
+  padding-left: 28%;
+  padding-right: 5%;
+  text-align: right;
 }
 
 section:nth-child(9) {
-  background: #eeeeee;
+  background: #eee;
+  padding-left: 28%;
+  padding-right: 5%;
+  text-align: right;
 }
 
 section:nth-child(10) {
-  background: #eeeeee;
+  background: #eee;
+  padding-left: 28%;
+  padding-right: 5%;
+  text-align: right;
 }
 
 
