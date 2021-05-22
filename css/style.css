@@ -259,22 +259,22 @@ body {
 
 @keyframes animate{
   0%{
-      content: 'minute';
+      content: 'MINUTE';
   }
   20%{
-      content: 'hour';
+      content: 'HOUR';
   }
   40%{
-      content: 'day';
+      content: 'DAY';
   }
   60%{
-      content: 'week';
+      content: 'WEEK';
   }
   80%{
-      content: 'month';
+      content: 'MONTH';
   }
   100%{
-      content: 'year';
+      content: 'YEAR';
   }
 }
 
@@ -400,12 +400,19 @@ body {
 .changingText { 
     padding: 0;
     margin: 0;
-    background-color:black;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.changingText span {
+  font-size: 10rem;
 }
 
 .changingText h2 {
-  text-align: center;
-  font-size: 5rem;
-  color: white;
+  font-size: 10rem;
+  color: #eee;
 }
+
 
