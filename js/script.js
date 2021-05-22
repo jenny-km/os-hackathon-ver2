@@ -1,24 +1,17 @@
 // Global Variables
 // Get the header
-var arrowDown = document.getElementById("arrow-down");
+
 
 // Get the offset position of the navbar
-var sticky = 0;
+
 
 var active = document.getElementById("list-section1");
 
-window.addEventListener('scroll', arrowDown);
+
 window.addEventListener('scroll', checkScrollPosition);
+
 // When the user scrolls the page, execute myFunction
 
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function arrowDown() {
-  if (window.pageYOffset > sticky) {
-    arrowDown.classList.add("hide");
-  } else {
-    arrowDown.classList.remove("hide");
-  }
-}
 
 
 function changeTime(){
@@ -105,7 +98,15 @@ $(document).ready(function(){
     })
 })
 function checkScrollPosition(clicked_id){
-    
+    var arrowDown = document.getElementById("arrow-down");
+    var sticky = 0;
+    if (window.pageYOffset > sticky) {
+        arrowDown.classList.add("hide");
+      } else {
+        arrowDown.classList.remove("hide");
+      }
+
+
     var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
     var section0 = document.getElementById("section-intro-2").offsetTop+600;
     var section1 = document.getElementById("section1").offsetTop-100;
@@ -128,24 +129,18 @@ function checkScrollPosition(clicked_id){
         });
         nav.classList.add("hide");
     } else if( scrollPosition >= section0 && scrollPosition<section1 ){
-        //console.log("help0");
         var none = "none";
         setListItemActive(none);
     }else if(scrollPosition>= section1 && scrollPosition< section2){
-        console.log("help1");
         setListItemActive("list-section1");
         nav.classList.remove("hide");
     }else if(scrollPosition>= section2 && scrollPosition< section3){
-        console.log("help2");
         setListItemActive("list-section2");
     }else if(scrollPosition>= section3 && scrollPosition< section4){
-        console.log("help3");
         setListItemActive("list-section3");
     }else if(scrollPosition>= section4 && scrollPosition< section5){
-        console.log("help4");
         setListItemActive("list-section4");
     }else if(scrollPosition>= section5 && scrollPosition < section6){
-        console.log("help5");
         setListItemActive("list-section5");
     }else if(scrollPosition>= section6 && scrollPosition < section7){
         setListItemActive("list-section6");
