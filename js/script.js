@@ -101,6 +101,9 @@ function checkScrollPosition(clicked_id){
     var section5 = document.getElementById("section5").offsetTop-100;
     var section6 = document.getElementById("section6").offsetTop-100;
     var section7 = document.getElementById("section7").offsetTop-100;
+    var section8 = document.getElementById("section8").offsetTop-100;
+    var section9 = document.getElementById("section9").offsetTop-100;
+    var section10 = document.getElementById("section10").offsetTop-100;
     if(scrollPosition<section1 ){
         console.log("help0");
         var none = "none";
@@ -122,8 +125,14 @@ function checkScrollPosition(clicked_id){
         setListItemActive("list-section5");
     }else if(scrollPosition>= section6 && scrollPosition < section7){
         setListItemActive("list-section6");
-    }else if(scrollPosition>= section7 ){
+    }else if(scrollPosition>= section7 && scrollPosition < section8){
         setListItemActive("list-section7");
+    }else if(scrollPosition>= section8 && scrollPosition < section9){
+        setListItemActive("list-section8");
+    }else if(scrollPosition>= section9 && scrollPosition < section10){
+        setListItemActive("list-section9");
+    }else if(scrollPosition>= section10){
+        setListItemActive("list-section10");
     }
 
 }

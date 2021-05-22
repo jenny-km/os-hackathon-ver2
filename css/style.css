@@ -6,7 +6,7 @@
 
 .wrapper {
   min-height: 100vh;
-  font-family: "Roboto Slab", serif;
+  font-family: "Helvetica Neue", serif;
   font-weight: 300;
   color: rgb(6, 6, 6);
   position: relative;
@@ -14,7 +14,7 @@
 
 section {
   height: 100vh;
-  font-size: 40px;
+  font-size: 38px;
   font-weight: 100;
   background-color: #eeeeee;
   display: -webkit-box;
@@ -41,31 +41,73 @@ section:nth-child(3) {
 }
 
 section:nth-child(4) {
-  background: #eeeeee;
+  background: #eee;
+  padding-left: 28%;
+  padding-right: 5%;
+  text-align: right;
 }
 
 section:nth-child(5) {
-  background: #eeeeee;
+  background: #eee;
+  padding-left: 28%;
+  padding-right: 5%;
+  text-align: right;
 }
 
 section:nth-child(6) {
-  background: #eeeeee;
+  background: #eee;
+  padding-left: 28%;
+  padding-right: 5%;
+  text-align: right;
 }
 
 section:nth-child(7) {
-  background: #eeeeee;
+  background: #eee;
+  padding-left: 28%;
+  padding-right: 5%;
+  text-align: right;
 }
 
 section:nth-child(8) {
-  background: #eeeeee;
+  background: #eee;
+  padding-left: 28%;
+  padding-right: 5%;
+  text-align: right;
 }
 
 section:nth-child(9) {
-  background: #eeeeee;
+  background: #eee;
+  padding-left: 28%;
+  padding-right: 5%;
+  text-align: right;
 }
 
 section:nth-child(10) {
-  background: #eeeeee;
+  background: #eee;
+  padding-left: 28%;
+  padding-right: 5%;
+  text-align: right;
+}
+
+section:nth-child(11) {
+  background: #eee;
+  padding-left: 28%;
+  padding-right: 5%;
+  text-align: right;
+}
+
+section:nth-child(12) {
+  background: #eee;
+  padding-left: 28%;
+  padding-right: 5%;
+  text-align: right;
+}
+
+section:nth-child(13) {
+  background: #eee;
+  padding-left: 28%;
+  padding-right: 5%;
+  text-align: right;
 }
 
 
