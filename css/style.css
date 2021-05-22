@@ -6,7 +6,7 @@
 
 .wrapper {
   min-height: 100vh;
-  font-family: "Open Sans", serif;
+  font-family: "Helvetica Neue", serif;
   font-weight: 300;
   color: rgb(6, 6, 6);
   position: relative;
@@ -84,6 +84,27 @@ section:nth-child(9) {
 }
 
 section:nth-child(10) {
+  background: #eee;
+  padding-left: 28%;
+  padding-right: 5%;
+  text-align: right;
+}
+
+section:nth-child(11) {
+  background: #eee;
+  padding-left: 28%;
+  padding-right: 5%;
+  text-align: right;
+}
+
+section:nth-child(12) {
+  background: #eee;
+  padding-left: 28%;
+  padding-right: 5%;
+  text-align: right;
+}
+
+section:nth-child(13) {
   background: #eee;
   padding-left: 28%;
   padding-right: 5%;
