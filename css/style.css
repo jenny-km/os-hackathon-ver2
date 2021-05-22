@@ -405,3 +405,15 @@ body {
   color: white;
 }
 
+#image-container1 {
+  display: fixed;
+  overflow: scroll;
+}
+#image1 {
+  display: absolute;
+  overflow: scroll;
+  height:auto;
+  max-width: 60%;
+  margin-top: 10vh;
+  margin-left: 60vh;
+}
