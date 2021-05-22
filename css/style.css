@@ -110,6 +110,9 @@ section:nth-child(13) {
   text-align: right;
 }
 
+.hide {
+  display: none;
+}
 
 .nav__wrapper {
   position: fixed;
@@ -125,6 +128,7 @@ section:nth-child(13) {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  transition: .5s;
 }
 
 .nav {
