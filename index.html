@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height">
+    <title>Open Source Hackathon - Team Name</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type ="text/css" href="css/style.css">
+</head>
+<body data-spy="scroll" data-target="#navbar-example">
+
+
+
+<div class="wrapper" >
+
+    <nav class="nav__wrapper" id="navbar-example">
+      <ul id ="listOfSections" class="nav">
+
+        <li role="presentation" id ="list-section1" class ="active" >
+          <a href="#section1" onclick ="checkScrollPosition('list-section1')" >
+            <span class="nav__counter">01</span>
+            <h3 class="nav__title">Intro</h3>
+          </a>
+        </li>
+
+        <li role="presentation" id ="list-section2" >
+          <a href="#section2" onclick ="checkScrollPosition('list-section2')" >
+            <span class="nav__counter">02</span>
+            <h3 class="nav__title">Section 2 Title</h3>
+          </a>
+        </li>
+
+        <li role="presentation" id ="list-section3" >
+          <a href="#section3" onclick ="checkScrollPosition('list-section3')">
+            <span class="nav__counter">03</span>
+            <h3 class="nav__title">Section 3 Title</h3>
+          </a>
+        </li>
+        
+        <li role="presentation" id ="list-section4">
+          <a href="#section4" onclick ="checkScrollPosition('list-section4')">
+            <span class="nav__counter">04</span>
+            <h3 class="nav__title">Section 4 Title</h3>
+          </a>
+        </li>
+        
+        <li role="presentation" id ="list-section5">
+          <a href="#section5" onclick ="checkScrollPosition('list-section5')">
+            <span class="nav__counter">05</span>
+            <h3 class="nav__title">Section 5 Title</h3>
+          </a>
+        </li>
+        
+        <li role="presentation" id ="list-section6">
+            <a href="#section6" onclick ="checkScrollPosition('list-section6')">
+              <span class="nav__counter">06</span>
+              <h3 class="nav__title">Section 6 Title</h3>
+            </a>
+          </li>
+        
+          <li role="presentation" id ="list-section7">
+            <a href="#section7" onclick ="checkScrollPosition('list-section7')">
+              <span class="nav__counter">07</span>
+              <h3 class="nav__title">Section 7 Title</h3>
+            </a>
+          </li>
+
+      </ul>
+    </nav>
+
+    <section class="section section-intro-1" id="section-intro-1">
+        <div class="clock-container">
+        
+
+            <div class="digital-clock">
+                <div class ="hour">
+                    <span id ="hour-1"></span>
+                    <span id ="hour-2"></span>
+                </div>
+                <div class ="minute">
+                    <span id ="minute-1"></span>
+                    <span id ="minute-2"></span>
+                </div>
+                <div class ="second">
+                    <span id ="second-1"></span>
+                    <span id ="second-2"></span>
+                </div>
+            </div>
+        </div>      
+        
+       <!-- <i id ="arrow-down" class="fas fa-chevron-down fa-3x bounce"></i> -->
+    </section>
+
+    <section class="section section-intro-2" id="section-intro-2">
+        <div class="digital-clock">
+            <div class ="day">
+                <span id ="day-1"></span>
+            </div>
+        </div>       
+    </section>
+
+    <section class="section section1" id="section1">
+      Scroll down or use the nav.
+    </section>
+
+    <section class="section section2" id="section2">
+      Section 2
+    </section>
+
+    <section class="section section3" id="section3">
+      Section 3
+    </section>
+
+    <section class="section section4" id="section4">
+      Section 4
+    </section>
+
+    <section class="section section5" id="section5">
+      Section 5
+    </section>
+
+    <section class="section section6" id="section6">
+      Section 6
+    </section>
+
+    <section class="section section7" id="section7">
+        Section 7
+    </section>
+
+
+  </div>
+
+
+<!-- javascript needs to be at the bottom before the body -->
+<script src ="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
+
+
