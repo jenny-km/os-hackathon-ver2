@@ -249,7 +249,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #eeeeee;
+  /*background-image: url("https://cdn.pixabay.com/photo/2021/05/15/14/58/pied-kingfisher-6255945_960_720.jpg");*/
+  background-image: url("../img/sample.jpg");  
 }
 
 .changingText span:before{
@@ -338,15 +339,6 @@ body {
   }
 }
 
-.clock-container {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #eeeeee;
-}
 
 .digital-clock {
   font-size: 0;
