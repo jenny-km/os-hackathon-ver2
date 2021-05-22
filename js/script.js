@@ -61,9 +61,10 @@ function findDifferenceInDate(){
     changeText(days, noOfDays);
     setTimeout(findDifferenceInDate, 1000);
 
-    console.log(start);
-    console.log(end);
-    console.log(noOfDays);
+    // console.log(start);
+    // console.log(end);
+    // console.log(noOfDays);
+
 }
 
 findDifferenceInDate();
