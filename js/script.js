@@ -158,11 +158,11 @@ function checkScrollPosition(clicked_id){
         setListItemActive("list-section8");
     }else if(scrollPosition>= section9 && scrollPosition < section10){
         setListItemActive("list-section9");
+        changeTextContainer.classList.remove("color-change");
+        newChangeTextContainer.classList.remove("color-change2");
     }else if(scrollPosition >= section10 && scrollPosition < changingText){
         setListItemActive("list-section10");
         nav.classList.remove("hide");
-        changeTextContainer.classList.remove("color-change");
-        newChangeTextContainer.classList.remove("color-change2");
     } else if( scrollPosition >= changingText ){
         nav.classList.add("hide");
         changeTextContainer.classList.add("color-change");
