@@ -16,7 +16,7 @@ section {
   height: 100vh;
   font-size: 38px;
   font-weight: 100;
-  background-color: #eeeeee;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,7 +37,7 @@ section:nth-child(2) {
 }
 
 section:nth-child(3) {
-  background: #eee;
+  background: white;
 }
 
 .section1/*:nth-child(4)*/ {
@@ -45,6 +45,7 @@ section:nth-child(3) {
   padding-left: 28%;
   padding-right: 5%;
   text-align: right;
+  transition: opacity 0.5s;
 }
 
 .section2/*:nth-child(5)*/ {
@@ -252,7 +253,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #eeeeee;
+  background-color: white;
 }
 
 .changingText span:before {
@@ -348,7 +349,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #eeeeee;
+  background-color: white;
 }
 
 .digital-clock {
@@ -392,6 +393,11 @@ body {
   transition: background-color 0.05s ease-in;
 }
 
+.fadein{
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
 .changingText {
   padding: 0;
   margin: 0;
@@ -399,6 +405,7 @@ body {
   display: flex;
   flex-direction: column;
   color: white;
+  background-position: center;
   transition:0.5s;
 }
 

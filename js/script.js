@@ -128,6 +128,7 @@ function checkScrollPosition(clicked_id){
     var changingText  = document.getElementById("cText").offsetTop-200;
     var changeTextContainer = document.getElementById("cText");
     var newChangeTextContainer = document.getElementById("newCText");
+    //var section1e = document.getElementById("section1");
     var nav = document.getElementById("navbar");
     if( scrollPosition < section0 ){
         nav.classList.forEach(item=>{
@@ -139,9 +140,12 @@ function checkScrollPosition(clicked_id){
     } else if( scrollPosition >= section0 && scrollPosition<section1 ){
         var none = "none";
         setListItemActive(none);
+        //section1e.classList.remove("fadein");
+
     }else if(scrollPosition>= section1 && scrollPosition< section2){
         setListItemActive("list-section1");
         nav.classList.remove("hide");
+        //section1e.classList.add("fadein");
     }else if(scrollPosition>= section2 && scrollPosition< section3){
         setListItemActive("list-section2");
     }else if(scrollPosition>= section3 && scrollPosition< section4){
