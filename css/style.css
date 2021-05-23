@@ -20,7 +20,7 @@ section {
   height: 100vh;
   font-size: 38px;
   font-weight: 100;
-  background-color: white;
+  background-color: #eee;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -256,7 +256,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .newCTEXT span:before {
@@ -317,7 +317,7 @@ body {
   text-decoration: underline;
 }
 #hour-1 {
-  color:black;
+  color: black;
 }
 #hour-2 {
   color: black;
@@ -337,7 +337,7 @@ body {
 .digital-clock > div.hour::after,
 .digital-clock > div.minute::after {
   content: ":";
-  color:black;
+  color: black;
   position: absolute;
 }
 
@@ -493,5 +493,3 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-
-
