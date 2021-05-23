@@ -120,6 +120,7 @@ function checkScrollPosition(clicked_id){
     var section9 = document.getElementById("section9").offsetTop-100;
     var section10 = document.getElementById("section10").offsetTop-100;
     var changingText  = document.getElementById("cText").offsetTop-200;
+    var changeTextContainer = document.getElementById("cText");
     var nav = document.getElementById("navbar");
     if( scrollPosition < section0 ){
         nav.classList.forEach(item=>{
@@ -153,8 +154,10 @@ function checkScrollPosition(clicked_id){
     }else if(scrollPosition >= section10 && scrollPosition < changingText){
         setListItemActive("list-section10");
         nav.classList.remove("hide");
+        changeTextContainer.classList.remove("color-change");
     } else if( scrollPosition >= changingText ){
         nav.classList.add("hide");
+        changeTextContainer.classList.add("color-change");
     }
 
 }
@@ -180,62 +183,3 @@ function setListItemActive(clicked_id){
     }
 }
 
-
-/*
-window.addEventListener('scroll', colorChangeOnScroll);
-// Get the offset position
-function colorChangeOnScroll() {
-    var width = window.innerWidth;
-    var bodyWrapper = document.getElementById("body-wrapper");
-    var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-    // double check if I really need a mobile one
-
-        var sectionOne = document.getElementById("section-one-desktop");
-        var sectionTwo = document.getElementById("section-two-desktop");
-        var sectionThree = document.getElementById("section-three-desktop");
-
-    var sectionOneScrollPosition = sectionOne.offsetTop - 700;
-    var sectionTwoScrollPosition = sectionTwo.offsetTop - 400;
-    var sectionThreeScrollPosition = sectionThree.offsetTop - 400;
-    //console.log(sectionOneScrollPosition);
-    
-    if(scrollPosition < sectionOneScrollPosition){
-        // remove any class with the color-
-        bodyWrapper.classList.forEach(item=>{
-            if(item.startsWith('color')) {
-                bodyWrapper.classList.remove(item);
-            }
-        });
-        bodyWrapper.classList.add("color-lightBlue");
-
-    }else if(scrollPosition > sectionOneScrollPosition && scrollPosition < sectionTwoScrollPosition){
-        // remove any class with the color-
-        bodyWrapper.classList.forEach(item=>{
-            if(item.startsWith('color')) {
-                bodyWrapper.classList.remove(item);
-            }
-        });
-        bodyWrapper.classList.add("color-lightBlue");
-
-    }else if(scrollPosition > sectionTwoScrollPosition && scrollPosition < sectionThreeScrollPosition){
-        // remove any class with the color-
-        bodyWrapper.classList.forEach(item=>{
-            if(item.startsWith('color')) {
-                bodyWrapper.classList.remove(item);
-            }
-        });
-        bodyWrapper.classList.add("color-transparent");
-
-    }else if(scrollPosition > sectionThreeScrollPosition){
-        // remove any class with the color-
-        bodyWrapper.classList.forEach(item=>{
-            if(item.startsWith('color')) {
-                bodyWrapper.classList.remove(item);
-            }
-        });
-        bodyWrapper.classList.add("color-black");
-
-    }
-  
-}
-*/
