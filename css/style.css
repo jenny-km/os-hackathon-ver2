@@ -255,7 +255,7 @@ body {
   background-color: #eeeeee;
 }
 
-.changingText span:before {
+.newCTEXT span:before {
   content: "";
   animation: animate infinite 7s;
 }
@@ -389,24 +389,23 @@ body {
 }
 .color-change2 {
   background-color: #1b1b1b !important;
-  transition: background-color 0.05s ease-in;
+  transition: background-color 1.0s ease;
 }
 
-.changingText {
+.newCTEXT {
   padding: 0;
   margin: 0;
   background-color: #eeeeee;
   display: flex;
   flex-direction: column;
   color: white;
-  transition:0.5s;
 }
 
-.changingText span {
+.newCTEXT span {
   font-size: 10rem;
 }
 
-.changingText h2 {
+.newCTEXT h2 {
   font-size: 10rem;
   color: #eee;
 }
