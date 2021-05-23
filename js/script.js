@@ -92,11 +92,11 @@ function defineActive(){
 var navbar = document.getElementById("navbar-example");
 //navbar.style.opacity = "0";
 var section1 = document.getElementById("section1").offsetTop-100;
-var section10 = document.getElementById("section10").offsetTop;
+var section12 = document.getElementById("section12").offsetTop;
 $(document).ready(function(){
     $(window).scroll(function(){
         // fade in
-        if($(this).scrollTop() < section1 || $(this).scrollTop() > section10 ){
+        if($(this).scrollTop() < section1 || $(this).scrollTop() > section12 ){
             $(".nav__wrapper").css({"opacity" : "0"})
         // fade out
         } else {
@@ -118,6 +118,8 @@ function checkScrollPosition(clicked_id){
     var section8 = document.getElementById("section8").offsetTop-100;
     var section9 = document.getElementById("section9").offsetTop-100;
     var section10 = document.getElementById("section10").offsetTop-100;
+    var section11 = document.getElementById("section11").offsetTop-100;
+    var section12 = document.getElementById("section12").offsetTop-100;
     var changingText  = document.getElementById("cText").offsetTop-200;
     var nav = document.getElementById("navbar");
     if( scrollPosition < section0 ){
@@ -155,8 +157,12 @@ function checkScrollPosition(clicked_id){
         setListItemActive("list-section8");
     }else if(scrollPosition>= section9 && scrollPosition < section10){
         setListItemActive("list-section9");
-    }else if(scrollPosition >= section10 && scrollPosition < changingText){
+    }else if(scrollPosition >= section10 && scrollPosition < section11){
         setListItemActive("list-section10");
+    } else if(scrollPosition >= section11 && scrollPosition < section12){
+        setListItemActive("list-section11");
+    } else if(scrollPosition >= section12 && scrollPosition < changingText){
+        setListItemActive("list-section12");
         nav.classList.remove("hide");
     } else if( scrollPosition >= changingText ){
         nav.classList.add("hide");

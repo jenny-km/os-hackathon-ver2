@@ -40,70 +40,84 @@ section:nth-child(3) {
   background: #eeeeee;
 }
 
-section:nth-child(4) {
+.section1/*:nth-child(4)*/ {
   background: #eee;
   padding-left: 28%;
   padding-right: 5%;
   text-align: right;
 }
 
-section:nth-child(5) {
+.section2/*:nth-child(5)*/ {
   background: #eee;
   padding-left: 28%;
   padding-right: 5%;
   text-align: right;
 }
 
-section:nth-child(6) {
+.section3/*:nth-child(6)*/ {
   background: #eee;
   padding-left: 28%;
   padding-right: 5%;
   text-align: right;
 }
 
-section:nth-child(7) {
+.section4/*:nth-child(7)*/ {
   background: #eee;
   padding-left: 28%;
   padding-right: 5%;
   text-align: right;
 }
 
-section:nth-child(8) {
+.section5/*:nth-child(8)*/ {
   background: #eee;
   padding-left: 28%;
   padding-right: 5%;
   text-align: right;
 }
 
-section:nth-child(9) {
+.section6/*:nth-child(9)*/ {
   background: #eee;
   padding-left: 28%;
   padding-right: 5%;
   text-align: right;
 }
 
-section:nth-child(10) {
+.section7/*:nth-child(10)*/ {
   background: #eee;
   padding-left: 28%;
   padding-right: 5%;
   text-align: right;
 }
 
-section:nth-child(11) {
+.section8/*:nth-child(11)*/ {
   background: #eee;
   padding-left: 28%;
   padding-right: 5%;
   text-align: right;
 }
 
-section:nth-child(12) {
+.section9/*:nth-child(12)*/ {
   background: #eee;
   padding-left: 28%;
   padding-right: 5%;
   text-align: right;
 }
 
-section:nth-child(13) {
+.section10/*:nth-child(13)*/ {
+  background: #eee;
+  padding-left: 28%;
+  padding-right: 5%;
+  text-align: right;
+}
+
+.section11 {
+  background: #eee;
+  padding-left: 28%;
+  padding-right: 5%;
+  text-align: right;
+}
+
+.section12 {
   background: #eee;
   padding-left: 28%;
   padding-right: 5%;
@@ -249,7 +263,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*background-image: url("https://cdn.pixabay.com/photo/2021/05/15/14/58/pied-kingfisher-6255945_960_720.jpg");*/
   background-image: url("../img/sample.jpg");  
 }
 
