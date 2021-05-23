@@ -128,7 +128,7 @@ section:nth-child(13) {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .nav {
@@ -233,7 +233,6 @@ section:nth-child(13) {
   font-family: "Montserrat", san-serif;
 }
 
-
 body {
   background-color: #eeeeee;
 }
@@ -252,29 +251,29 @@ body {
   background-color: #eeeeee;
 }
 
-.changingText span:before{
-  content: '';
+.changingText span:before {
+  content: "";
   animation: animate infinite 7s;
 }
 
-@keyframes animate{
-  0%{
-      content: 'MINUTE';
+@keyframes animate {
+  0% {
+    content: "MINUTE";
   }
-  20%{
-      content: 'HOUR';
+  20% {
+    content: "HOUR";
   }
-  40%{
-      content: 'DAY';
+  40% {
+    content: "DAY";
   }
-  60%{
-      content: 'WEEK';
+  60% {
+    content: "WEEK";
   }
-  80%{
-      content: 'MONTH';
+  80% {
+    content: "MONTH";
   }
-  100%{
-      content: 'YEAR';
+  100% {
+    content: "YEAR";
   }
 }
 
@@ -295,7 +294,7 @@ body {
 
 .digital-clock > div > span,
 .digital-clock > div::after {
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
   font-size: 100px;
   font-weight: 800;
   text-align: center;
@@ -365,7 +364,7 @@ body {
 
 .digital-clock > div > span,
 .digital-clock > div::after {
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
   font-size: 100px;
   font-weight: 800;
   text-align: center;
@@ -380,30 +379,18 @@ body {
   position: absolute;
 }
 
-/*For color change background*/
-
-/*
-.color-transparent {
-  background-color: #fff !important;
-  transition: background-color 1s ease;
-}
-.color-lightBlue {
-  background-color: #c3c9d0 !important;
-  transition: background-color 1s ease;
-}
-.color-black {
+.color-change {
   background-color: #242424 !important;
-  transition: background-color 1s ease;
+  transition: background-color 1.5s ease;
 }
-*/
 
-.changingText { 
-    padding: 0;
-    margin: 0;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    color: white;
+.changingText {
+  padding: 0;
+  margin: 0;
+  background-color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  color: white;
 }
 
 .changingText span {
@@ -414,5 +401,3 @@ body {
   font-size: 10rem;
   color: #eee;
 }
-
-
