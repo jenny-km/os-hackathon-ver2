@@ -37,7 +37,7 @@ section:nth-child(2) {
 }
 
 section:nth-child(3) {
-  background: white;
+  background: #eee;
 }
 
 .section1/*:nth-child(4)*/ {
