@@ -427,3 +427,21 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.section {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.section > strong {
+  display: inline;
+}
+
+
+#section10 {
+  background: #eee;
+  padding-left: 28%;
+  padding-right: 5%;
+  text-align: right;
+}
