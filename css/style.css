@@ -110,6 +110,10 @@ section:nth-child(3) {
   text-align: right;
 }
 
+.newCTEXT{
+  background-color: #eee;
+}
+
 .hide {
   display: none;
 }
@@ -381,7 +385,11 @@ body {
 
 .color-change {
   background-color: #1b1b1b !important;
-  transition: background-color 1.5s ease;
+  transition: background-color 1.0s ease;
+}
+.color-change2 {
+  background-color: #1b1b1b !important;
+  transition: background-color 0.05s ease-in;
 }
 
 .changingText {
@@ -391,6 +399,7 @@ body {
   display: flex;
   flex-direction: column;
   color: white;
+  transition:0.5s;
 }
 
 .changingText span {

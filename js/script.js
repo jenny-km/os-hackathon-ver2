@@ -95,6 +95,12 @@ $(document).ready(function(){
         } else {
             $(".nav__wrapper").css({"opacity" : "1"})
         }
+
+        if($(this).scrollTop() > section10 ){
+            $(".changingText").css({"opacity" : "1"})
+        } else {
+            $(".changingText").css({"opacity" : "0"})
+        }
     })
 })
 function checkScrollPosition(clicked_id){
@@ -121,6 +127,7 @@ function checkScrollPosition(clicked_id){
     var section10 = document.getElementById("section10").offsetTop-100;
     var changingText  = document.getElementById("cText").offsetTop-200;
     var changeTextContainer = document.getElementById("cText");
+    var newChangeTextContainer = document.getElementById("newCText");
     var nav = document.getElementById("navbar");
     if( scrollPosition < section0 ){
         nav.classList.forEach(item=>{
@@ -155,9 +162,11 @@ function checkScrollPosition(clicked_id){
         setListItemActive("list-section10");
         nav.classList.remove("hide");
         changeTextContainer.classList.remove("color-change");
+        changeTextContainer.classList.remove("color-change");
     } else if( scrollPosition >= changingText ){
         nav.classList.add("hide");
         changeTextContainer.classList.add("color-change");
+        newChangeTextContainer.classList.add("color-change2");
     }
 
 }
