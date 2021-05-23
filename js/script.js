@@ -162,7 +162,7 @@ function checkScrollPosition(clicked_id){
         setListItemActive("list-section10");
         nav.classList.remove("hide");
         changeTextContainer.classList.remove("color-change");
-        changeTextContainer.classList.remove("color-change");
+        newChangeTextContainer.classList.remove("color-change2");
     } else if( scrollPosition >= changingText ){
         nav.classList.add("hide");
         changeTextContainer.classList.add("color-change");
