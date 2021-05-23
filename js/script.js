@@ -84,7 +84,7 @@ function defineActive(){
 
 var navbar = document.getElementById("navbar-example");
 //navbar.style.opacity = "0";
-var section1 = document.getElementById("section1").offsetTop-100;
+var section1 = document.getElementById("section1").offsetTop-150;
 var section10 = document.getElementById("section10").offsetTop;
 $(document).ready(function(){
     $(window).scroll(function(){
