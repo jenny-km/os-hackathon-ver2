@@ -256,7 +256,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: rgba(0,0,0,0);
 }
 
 .newCTEXT span:before {
@@ -316,10 +316,28 @@ body {
   font-size: 120px;
   text-decoration: underline;
 }
-
+#hour-1 {
+  color:black;
+}
+#hour-2 {
+  color: black;
+}
+#minute-1 {
+  color: black;
+}
+#minute-2 {
+  color: black;
+}
+#second-1 {
+  color: black;
+}
+#second-2 {
+  color: black;
+}
 .digital-clock > div.hour::after,
 .digital-clock > div.minute::after {
   content: ":";
+  color:black;
   position: absolute;
 }
 
@@ -349,16 +367,6 @@ body {
   100% {
     bottom: 0;
   }
-}
-
-.clock-container {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
 }
 
 .digital-clock {
@@ -477,4 +485,13 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+#section-intro-1 {
+  background: white;
+  background-image: url(../img/opening-text-time.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 
