@@ -12,6 +12,10 @@
   position: relative;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 section {
   height: 100vh;
   font-size: 38px;
@@ -110,7 +114,7 @@ section:nth-child(3) {
   text-align: right;
 }
 
-.newCTEXT{
+.newCTEXT {
   background-color: #eee;
 }
 
@@ -302,9 +306,15 @@ body {
   font-size: 100px;
   font-weight: 800;
   text-align: center;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2),
     -3px -3px 10px rgba(255, 255, 255, 1);
+}
+
+#day-1 {
+  color: black;
+  font-size: 120px;
+  text-decoration: underline;
 }
 
 .digital-clock > div.hour::after,
@@ -385,11 +395,11 @@ body {
 
 .color-change {
   background-color: #1b1b1b !important;
-  transition: background-color 1.0s ease;
+  transition: background-color 1s ease;
 }
 .color-change2 {
   background-color: #1b1b1b !important;
-  transition: background-color 1.0s ease;
+  transition: background-color 1s ease;
 }
 
 .newCTEXT {
@@ -445,7 +455,6 @@ body {
   display: inline;
 }
 
-
 #section10 {
   background: #eee;
   padding-left: 28%;
@@ -468,3 +477,4 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+
